@@ -10,21 +10,23 @@ Current linting rules:
 2. Any type logging should not be used
 3. Log field names and types should be consistent
 
+This was forked from github.com/planetscale/go-logkeycheck given the similar structure and nature of the check.
+
 ## Install
 
 Install latest:
 
 ```console
-go install github.com/planetscale/go-logkeycheck@latest
+go install github.com/assetnote/go-logkeycheck@latest
 ```
 
 Or specify a version:
 
 ```console
-go install github.com/planetscale/go-logkeycheck@v0.0.1
+go install github.com/assetnote/go-logkeycheck@v0.0.1
 ```
 
-Refer to [github releases](https://github.com/planetscale/go-logkeycheck/releases) for a list of available versions.
+Refer to [github releases](https://github.com/assetnote/go-logkeycheck/releases) for a list of available versions.
 
 ## Example
 
