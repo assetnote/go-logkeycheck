@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/planetscale/go-logkeycheck/internal/logkeycheck"
+	"github.com/assetnote/go-logkeycheck/internal/logkeycheck"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
@@ -24,7 +24,7 @@ var AnalyzerPlugin analyzerPlugin //nolint deadcode:unused
 
 // GetAnalyzers implements golangci-lint's plugin interface.
 func (*analyzerPlugin) GetAnalyzers() []*analysis.Analyzer {
-	return []*analysis.Analyzer{logkeycheck.Analyzer}
+	return []*analysis.Analyzer{logkeycheck.Analyzer, logkeycheck.PreAnalyzer}
 }
 
 func main() {
